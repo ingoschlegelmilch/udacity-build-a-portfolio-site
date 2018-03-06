@@ -1,0 +1,85 @@
+/*Breakpoint for mobile viewports.*/
+
+@media screen and (max-width: 550px) {
+    .header_inner {
+        display: border-box;
+        text-align: center;
+        border-bottom: 2px solid #7d97ad;
+        z-index: 1;
+    }
+    .name, .description {
+        text-align: center;
+    }
+    .name {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .description {
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .icon_container {
+        position: relative;
+        z-index: -1;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .links h2 {
+        font-size: 1.5em;
+        font-weight: 300;
+        text-align: center;
+    }
+    .pic {
+        width: 100%;
+        margin-top: 2em;
+    }
+}
+/*Breakpoint for tablets.*/
+
+@media screen and (min-width:551px) and (max-width: 1024px) {
+    .name, .description {
+        margin-right: 5%;
+    }
+    .name {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1.5em;
+    }
+    .icon_container {
+        margin-left: 5%;
+    }
+    .links h2 {
+        font-size: 1.7em;
+        margin-left: 5%;
+    }
+}
+/*Breakpoint for desktops.*/
+
+@media screen and (min-width: 1025px) {
+    body, html {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero {
+        box-shadow: 10px 10px 20px grey;
+    }
+    .hero:first-child {
+        height: auto;
+        width: 100%;
+    }
+    .image {
+        margin-right: 5%;
+        width: calc((100% - 10%)/3);
+    }
+    .image:last-of-type {
+        margin-right: 0;
+    }
+}
