@@ -82,4 +82,17 @@
     .image:last-of-type {
         margin-right: 0;
     }
-}
+    .image:hover, .image:focus {
+        color: #02b3e4;
+    }
+    .img1, .img2, .img3 {
+        box-shadow: 10px 10px 20px grey;
+    }
+    a:link, a:visited, a:active {
+        text-decoration: none;
+    }
+    a:hover, a:focus {
+        text-decoration: underline;
+        color: #02b3e4;
+    }
+}   

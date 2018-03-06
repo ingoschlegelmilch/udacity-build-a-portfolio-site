@@ -19,11 +19,13 @@ header, main, section, div {
 .icon_container {
     float: left;
     width: 10%;
+    margin-left: 2%;
 }
 .name, .description {
     text-align: right;
     color: #2d3c49;
     text-transform: uppercase;
+    margin-right: 2%
 }
 .name {
     font-size: 3em;
@@ -43,7 +45,7 @@ header, main, section, div {
     width: 100%;
 }
 
-/* Lower section containing the three small pictures, links and text. */
+/* Bottom section containing the three small pictures, links and text. */
 
 .links {
     width: 100%;
@@ -52,7 +54,7 @@ header, main, section, div {
     font-size: 2em; 
     font-weight: 300;
     color: #7d97ad;
-    margin-bottom: 5%;
+    margin: 5% 0 5% 2%;
 }
 .img_container {
     display: flex;
@@ -65,3 +67,17 @@ header, main, section, div {
 .img1, .img2, .img3 {
     width: 100%;
 }
+.title {
+    font-size: 3em;
+    font-weight: 500;
+    color: #2d3c49;
+    text-transform: uppercase;
+}
+.url {
+    font-size: 1em;
+    font-weight: 200;
+    color: #2d3c49;
+}
+ a p {
+     margin: 0;
+ }
