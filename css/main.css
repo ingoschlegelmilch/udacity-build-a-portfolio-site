@@ -59,8 +59,7 @@ header, main, section, div {
     font-weight: 300;
     color: #7d97ad;
     margin: 3em 0 1em 0;
-    text-transform: capitalize;
-    
+    text-transform: capitalize; 
 }
 .img_container {
     display: flex;
@@ -68,7 +67,6 @@ header, main, section, div {
     position: relative;
     width: 100%;
     text-align: center;
-
 }  
 .img1, .img2, .img3 {
     width: 100%;
