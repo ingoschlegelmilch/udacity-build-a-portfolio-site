@@ -2,10 +2,9 @@
 
 @media screen and (max-width: 550px) {
     .header_inner {
-        display: border-box;
+        box-sizing: border-box;
         text-align: center;
         border-bottom: 2px solid #7d97ad;
-        z-index: 1;
     }
     .name, .description {
         text-align: center;
@@ -20,24 +19,29 @@
     }
     .icon_container {
         position: relative;
-        z-index: -1;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto;
     }
     .hero {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
     }
-    .links h2 {
+    .hero:first-child {
+        box-shadow: none;
+    }
+    .feature h2 {
         font-size: 1.5em;
-        font-weight: 300;
         text-align: center;
     }
-    .pic {
+    .image {
         width: 100%;
         margin-top: 2em;
+    }
+    .img1, .img2, .img3 {
+        box-shadow: none;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .url {
+        font-size: 1em;
     }
 }
 /*Breakpoint for tablets.*/
@@ -55,9 +59,22 @@
     .icon_container {
         margin-left: 5%;
     }
-    .links h2 {
+    .feature h2 {
         font-size: 1.7em;
         margin-left: 5%;
+    }
+    .image {
+        margin-right: 15%;
+        width: calc((100% - 30%)/3)
+    }
+    .image:last-of-type {
+        margin-right: 0;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .url {
+        font-size: 1em;
     }
 }
 /*Breakpoint for desktops.*/
@@ -68,11 +85,7 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .hero {
-        box-shadow: 10px 10px 20px grey;
-    }
     .hero:first-child {
-        height: auto;
         width: 100%;
     }
     .image {
@@ -81,18 +94,5 @@
     }
     .image:last-of-type {
         margin-right: 0;
-    }
-    .image:hover, .image:focus {
-        color: #02b3e4;
-    }
-    .img1, .img2, .img3 {
-        box-shadow: 10px 10px 20px grey;
-    }
-    a:link, a:visited, a:active {
-        text-decoration: none;
-    }
-    a:hover, a:focus {
-        text-decoration: underline;
-        color: #02b3e4;
     }
 }   
