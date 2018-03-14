@@ -5,35 +5,58 @@ body, html {
     width: 100%;
     font-family: "Oxygen", sans-serif;
 }
+
 header, main, section, div {
     box-sizing: border-box;
 }
+
 .letter_space {
     letter-spacing: 0.1rem;
 }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Header section containing name, description, logo and border. */
 
-.header_inner {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 10%;
     border-bottom: 4px solid #7d97ad;
 }
+
 .icon_container {
-    float: left;
+    order: 1;
     width: 10%;
 }
+
 .icon path {
     fill: #02b3e4;
 }
+
+.text_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 2;
+}
+
 .name, .description {
     text-align: right;
     color: #2d3c49;
     text-transform: uppercase;
 }
+
 .name {
     font-size: 3em;
     font-weight: 200;
 }
+
 .description {
     font-size: 1.5em;
     font-weight:100;
@@ -41,9 +64,11 @@ header, main, section, div {
 
 /* Middle section containing the big picture. */
 
-.hero:first-child {
+.hero {
     display: flex;
-    position: relative;
+}
+
+.hero:first-child {
     margin-top: 5%;
     width: 100%;
     box-shadow: 10px 10px 20px grey;
@@ -54,6 +79,7 @@ header, main, section, div {
 .feature {
     width: 100%;
 }
+
 .feature h2 {
     font-size: 2em; 
     font-weight: 300;
@@ -61,34 +87,52 @@ header, main, section, div {
     margin: 3em 0 1em 0;
     text-transform: capitalize; 
 }
+
 .img_container {
     display: flex;
-    flex-wrap: wrap;
-    position: relative;
+    justify-content: space-around;
     width: 100%;
     text-align: center;
-}  
+} 
+
 .img1, .img2, .img3 {
     width: 100%;
     box-shadow: 10px 10px 20px grey;
 }
+
+.img1 {
+    order: 1;
+}
+
+.img2 {
+    order: 2;
+}
+
+.img3 {
+    order: 3;
+}
+
 .title {
     font-size: 2.5em;
     font-weight: 500;
     color: #2d3c49;
     text-transform: uppercase;
 }
+
 .url {
     font-size: 1em;
     font-weight: 200;
     color: #2d3c49;
 }
+
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
+
 a:hover .title, a:hover .url {
     color: #02b3e4;
 }
+
 a p {
      margin: 0;
- }
+}

@@ -1,45 +1,63 @@
 /*Breakpoint for mobile viewports.*/
 
 @media screen and (max-width: 550px) {
-    .header_inner {
-        box-sizing: border-box;
-        text-align: center;
+    .header {
+        flex-direction: column;
+        justify-content: center;
         border-bottom: 2px solid #7d97ad;
     }
+
     .name, .description {
         text-align: center;
     }
+
     .name {
         font-size: 1.5em;
         font-weight: 500;
     }
+
     .description {
         font-size: 1em;
         font-weight: 300;
     }
+
     .icon_container {
         position: relative;
     }
+
     .hero {
+        display: flex;
         width: 100%;
     }
+
     .hero:first-child {
         box-shadow: none;
     }
+
     .feature h2 {
         font-size: 1.5em;
         text-align: center;
     }
+
+    .img_container {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+    }
+
     .image {
         width: 100%;
         margin-top: 2em;
     }
+
     .img1, .img2, .img3 {
         box-shadow: none;
     }
+
     .title {
         font-size: 1.5em;
     }
+
     .url {
         font-size: 1em;
     }
@@ -50,29 +68,37 @@
     .name, .description {
         margin-right: 5%;
     }
+
     .name {
         font-size: 2em;
     }
+
     .description {
         font-size: 1.5em;
     }
+
     .icon_container {
         margin-left: 5%;
     }
+
     .feature h2 {
         font-size: 1.7em;
         margin-left: 5%;
     }
+
+    .img_container {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .image {
-        margin-right: 15%;
-        width: calc((100% - 30%)/3)
+        flex: 0 1 30%;
     }
-    .image:last-of-type {
-        margin-right: 0;
-    }
+
     .title {
         font-size: 1.5em;
     }
+
     .url {
         font-size: 1em;
     }
@@ -85,14 +111,17 @@
         margin-left: auto;
         margin-right: auto;
     }
+
     .hero:first-child {
         width: 100%;
     }
-    .image {
-        margin-right: 5%;
-        width: calc((100% - 10%)/3);
+
+    .img_container {
+        display: flex;
+        justify-content: space-between;
     }
-    .image:last-of-type {
-        margin-right: 0;
+
+    .image {
+        flex: 0 1 30%;
     }
 }   
